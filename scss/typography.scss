@@ -1,0 +1,128 @@
+//HEADINGS
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  white-space: pre-wrap;
+  font-family: $base-font;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  line-height: $base-line-height;
+  margin-bottom: 0;
+  &:last-child {
+    margin: 0;
+  }
+  & + p,
+  & + h1,
+  & + h2,
+  & + h3,
+  & + h4,
+  & + h5,
+  & + h6,
+  & + .btn,
+  & + div,
+  & + table {
+    margin-top: 20px;
+  }
+  b {
+    font-weight: 500;
+  }
+}
+h1 {
+  font-size: $font-xxxl;
+  @include screen-size(lg) {
+    font-size: $font-xxl;
+  }
+  @include screen-size(md) {
+    font-size: $font-xl;
+  }
+}
+p {
+  font-family: $base-font;
+  white-space: pre-wrap;
+  font-size: $font-md;
+  font-weight: normal;
+  margin: 0;
+  line-height: $base-line-height;
+  & + p,
+  & + h1,
+  & + h2,
+  & + h3,
+  & + h4,
+  & + h5,
+  & + h6,
+  & + .btn,
+  & + div,
+  & + table {
+    margin-top: 20px;
+  }
+  &:empty {
+    display: none;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-sm;
+  }
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+  padding: 0;
+  margin: 0;
+  & + p {
+    margin-top: 2rem;
+  }
+}
+b {
+  display: inline;
+}
+sup {
+  display: inline;
+}
+
+
+
+.font-xxxl{ font-size: $font-xxxl}
+.font-xxl{ font-size: $font-xxl}
+.font-xl{ font-size: $font-xl}
+.font-lg{ font-size: $font-lg}
+.font-md{ font-size: $font-md}
+.font-sm{ font-size: $font-sm}
+.font-xs{ font-size: $font-xs}
+.font-xxs{ font-size: $font-xxs}
+
+.font-normal {
+  font-weight: 500;
+}
+
+
+.text-center{
+  text-align:center;
+}
+.text-right{
+  text-align:right;
+}
+.text-left{
+  text-align:left;
+}
+.text-md-left {
+  text-align: left !important;
+  @include screen-size(md) {
+    text-align: center !important;
+  }
+}
+
+.text-md-right {
+  text-align: right;
+  @include screen-size(md) {
+    text-align: center;
+  }
+}

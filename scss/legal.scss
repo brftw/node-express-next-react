@@ -1,0 +1,80 @@
+.pageLegalPage {
+  .body-copy-container {
+    padding: $pd-lg !important;
+    h2 {
+      font-size: $font-md;
+      color: $black;
+    }
+    h3,
+    h4,
+    h5 {
+      font-size: 1.5rem;
+      color: $black;
+    }
+    p,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    div,
+    li {
+      padding: 0;
+      margin: 0;
+      & + p,
+      & + li,
+      & + ul,
+      & + h2,
+      & + h3,
+      & + h4 {
+        margin-top: 20px;
+      }
+    }
+
+    table {
+      max-width: 100%;
+      margin: 20px auto;
+      th {
+        padding: $pd-md;
+        border: 1px solid $gray-3;
+        &:last-child {
+          text-align: center;
+        }
+        b {
+          font-weight: bold;
+        }
+      }
+      td {
+        padding: 15px $pd-md;
+        border: 1px solid $gray-3;
+        vertical-align: top;
+        @include media-breakpoint-down(md) {
+          p {
+            font-size: $font-xs;
+          }
+        }
+        b {
+          color: $black;
+        }
+      }
+      + p {
+        b {
+          i {
+            display: block;
+            margin-top: -15px;
+            font-weight: normal;
+            font-size: $font-xs;
+          }
+        }
+        i {
+          b {
+            display: block;
+            margin-top: -15px;
+            font-weight: normal;
+            font-size: $font-xs;
+          }
+        }
+      }
+    }
+  }
+}

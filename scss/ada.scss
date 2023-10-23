@@ -1,0 +1,21 @@
+//THESE STYLES ARE SPECIFIC TO ADA COMPLIANCE
+*:focus {
+  box-shadow: none !important;
+}
+*:focus-visible {
+  outline: 0 !important;
+  border-color: rgba(153, 153, 153, 0.8) !important;
+  box-shadow: 0 0 0 0.25rem rgba(153, 153, 153, 0.8) !important;
+}
+
+//VISUALLY HIDDEN BUT STILL ACCESSIBLE FOR ADA
+.invisible {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
